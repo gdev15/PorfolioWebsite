@@ -56,7 +56,7 @@ section, footer {
     opacity: 0;
     max-height: 0;
     overflow: hidden; /* Hide overflowing content */
-    transition: opacity 1s ease-in-out, max-height 3s ease;
+    transition: opacity 1s ease-in-out, max-height 2s ease;
 }
 
 .col:hover .project-cards .card-text {
@@ -64,6 +64,7 @@ section, footer {
     max-height: 100%; /* Assume a max height */
     opacity: 1;
 }
+
 
 
 
@@ -209,9 +210,12 @@ section.particle-container{
 
 
 
-
-
-
+@media screen and (max-width: 1024px){
+    .col .project-cards .card-text {
+		overflow: auto; /* Hide overflowing content */	
+	}
+    
+}
 
 
 @media screen and (max-width: 1024px){
@@ -220,6 +224,8 @@ section.particle-container{
         height: 100%;
     }
 }
+
+
 
 
 @media screen and (min-width: 1024px){
