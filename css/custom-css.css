@@ -47,6 +47,25 @@ section, footer {
 	border: 3px solid var(--sec) !important;
 } 
 
+.col .project-cards .card-text {
+    position:absolute;
+	left:0;
+	top:0;
+	background-color: rgba(25,25,25,.9);
+	padding: 0;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden; /* Hide overflowing content */
+    transition: opacity 1s ease-in-out, max-height 3s ease;
+}
+
+.col:hover .project-cards .card-text {
+	padding: 16px;
+    max-height: 100%; /* Assume a max height */
+    opacity: 1;
+}
+
+
 
 /* #region resume-page styling */
 
