@@ -16,9 +16,6 @@ div.nav-container{
 }
 
 
-div.resume_container {
-    margin: auto;
-}
 
 object {
     width: 100%;
@@ -65,16 +62,10 @@ section, footer {
     opacity: 1;
 }
 
+.resume-container {
 
-
-
-/* #region resume-page styling */
-
-section.resume_container{
-	height: 100vh !important;
+	overflow:auto !important;
 }
-
-/* #endregion */
 
 /* #region animated particles */
 /* https://codepen.io/alvarotrigo/pen/xxaaaGx */
