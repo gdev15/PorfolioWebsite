@@ -63,8 +63,22 @@ section, footer {
 }
 
 .resume-container {
+	display:flex;
+	flex-direction: column;	
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+}
 
-	overflow:auto !important;
+.resume-inner {
+	display:flex;
+	justify-content: center;
+	text-align: center;;
+}
+
+.resume-img{
+	width: 90%;
 }
 
 
